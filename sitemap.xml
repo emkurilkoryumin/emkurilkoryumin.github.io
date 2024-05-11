@@ -96,5 +96,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/post/post4/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
