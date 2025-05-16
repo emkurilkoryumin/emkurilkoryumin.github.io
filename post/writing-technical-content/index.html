@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: May 11, 2024 --><html lang="en-us" >
+<!-- Last Published: May 16, 2025 --><html lang="en-us" >
 
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -999,7 +999,7 @@ data.head()
 
 
 
-<div id="chart-148235769" class="chart"></div>
+<div id="chart-813546927" class="chart"></div>
 <script>
   (function() {
     let a = setInterval( function() {
@@ -1009,7 +1009,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json("./line-chart.json", function(chart) {
-        Plotly.plot('chart-148235769', chart.data, chart.layout, {responsive: true});
+        Plotly.plot('chart-813546927', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1688,7 +1688,7 @@ Crash --> [*]
 
   
   <p class="powered-by copyright-license-text">
-    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+    © 2025 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
   </p>
   
 
@@ -1741,6 +1741,9 @@ Crash --> [*]
   
   
 
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js" integrity="sha256-TIYL00Rhw/8WaoUhYTLX9SKIEFdXxg+yMWSLVUbhiLg=" crossorigin="anonymous" title="mermaid"></script>
   
 
 
@@ -1815,6 +1818,25 @@ Crash --> [*]
 
 
   <script src="/js/wowchemy-headroom.js" type="module"></script>
+<style>
+    .markmap > svg {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <script>
+    window.markmap = {
+      autoLoader: {
+        manual: false,
+        onReady() {
+          const { autoLoader, builtInPlugins } = window.markmap;
+          
+          autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
 
 
 
